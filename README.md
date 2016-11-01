@@ -2,7 +2,7 @@
 
 ## 実行方法
 ```
-$ node example.js
+$ node src/example.js
 ```
 
 ## 検証項目
