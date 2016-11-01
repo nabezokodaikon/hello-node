@@ -4,3 +4,9 @@
 ```
 $ node example.js
 ```
+
+## 検証項目
+* let
+* const
+* class
+* static
