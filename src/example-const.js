@@ -14,3 +14,8 @@ try {
 catch (e) {
   console.log(e);
 }
+
+const dic = {c: 3, d: 4};
+const {c, d} = dic; 
+console.log(c);
+console.log(d);
