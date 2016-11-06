@@ -1,1 +1,4 @@
-console.log("Hello Node.js!");
+"use strict";
+message = "Hello Node.js!"
+console.log(message);
+
