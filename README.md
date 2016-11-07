@@ -12,3 +12,4 @@ $ node src/example.js
 
 ## TODO
 * JavaScriptのキーワードを都度、Neovimの辞書ファイルに追記していく。
+* https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
