@@ -19,8 +19,13 @@ class After {
   }
 
   constructor(args) {
-    this.x = (args.x)? args.x: getEmpty();
-    this.y = (args.y)? args.y: getEmpty();
+    if (args) {
+      this.x = (args.x)? args.x: After.getEmpty();
+      this.y = (args.y)? args.y: After.getEmpty();
+    } else {
+      this.x = After.getEmpty();
+      this.y = After.getEmpty();
+    }
   }
 
   getArea() {
@@ -36,3 +41,10 @@ if (a.z) {
 } else {
   console.log("a.z is not found.");
 }
+
+var c = new After();
+console.log("c.x = %d, c.y = %d, c.area = %d", c.x, c.y, c.getArea());
+
+After.getEmpty = function() { return -1; }
+var d = new After();
+console.log("d.x = %d, d.y = %d, d.area = %d", d.x, d.y, d.getArea());
