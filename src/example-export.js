@@ -1,3 +1,6 @@
-exports.printHello = function() {
-  return "Hello!";
+module.exports = {
+  printHello: function() {
+    return "Hello!";
+  },
+  text: "Text!"
 }
