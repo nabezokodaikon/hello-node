@@ -14,9 +14,13 @@ console.log("b.x = %d, b.y = %d, b.area = %d", b.x, b.y, b.getArea());
 
 class After {
 
+  static getEmpty() {
+    return 0;
+  }
+
   constructor(args) {
-    this.x = (args.x)? args.x: 0;
-    this.y = (args.y)? args.y: 0;
+    this.x = (args.x)? args.x: getEmpty();
+    this.y = (args.y)? args.y: getEmpty();
   }
 
   getArea() {
