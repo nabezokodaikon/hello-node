@@ -13,9 +13,10 @@ var b = new Before(2, 3);
 console.log("b.x = %d, b.y = %d, b.area = %d", b.x, b.y, b.getArea());
 
 class After {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
+
+  constructor(args) {
+    this.x = (args.x)? args.x: 0;
+    this.y = (args.y)? args.y: 0;
   }
 
   getArea() {
@@ -23,7 +24,7 @@ class After {
   }
 }
 
-var a = new After(4, 5);
+var a = new After({x: 4, y: 5});
 console.log("a.x = %d, a.y = %d, a.area = %d", a.x, a.y, a.getArea());
 
 if (a.z) {
