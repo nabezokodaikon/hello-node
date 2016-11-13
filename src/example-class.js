@@ -1,3 +1,5 @@
+"use strict"
+
 function Before(x, y) {
   this.x = x;
   this.y = y;
@@ -23,3 +25,9 @@ class After {
 
 var a = new After(4, 5);
 console.log("a.x = %d, a.y = %d, a.area = %d", a.x, a.y, a.getArea());
+
+if (a.z) {
+  console.log("a.z is found."); 
+} else {
+  console.log("a.z is not found.");
+}
